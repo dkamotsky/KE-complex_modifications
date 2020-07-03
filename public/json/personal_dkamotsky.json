@@ -1,217 +1,545 @@
 {
-  "title": "Personal dkamotsky Remapping for Sun Type-5",
-  "rules": [
+    "title": "Personal dkamotsky Remapping for Sun Type-5",
+    "rules": [
 
 
-      {
-	  "description": "Map Copy to Command-C",
-	  "manipulators": [
-	      {
-		  "type": "basic",
-		  "from": { "key_code": "copy" },
-		  "to": [
-		      {
-			  "key_code": "c",
-			  "modifiers": [ "left_command" ]
-		      }	    
-		  ],
-		  "conditions": [
-		      {
-			  "type": "frontmost_application_unless",
-			  "bundle_identifiers": ["^.*emacs.*$"]
-		      }
-		  ]		  
-	      }
-	  ]
-      },
-
-      
-      {
-	  "description": "Map Paste to Command-V",
-	  "manipulators": [
-	      {
-		  "type": "basic",
-		  "from": { "key_code": "paste" },
-		  "to": [
-		      {
-			  "key_code": "v",
-			  "modifiers": [ "left_command" ]
-		      }	    
-		  ],
-		  "conditions": [
-		      {
-			  "type": "frontmost_application_unless",
-			  "bundle_identifiers": ["^.*emacs.*$"]
-		      }
-		  ]		  		  
-	      }
-	  ]
-      },
-      
-
-      {
-	  "description": "Map Cut to Command-X",
-	  "manipulators": [
-	      {
-		  "type": "basic",
-		  "from": { "key_code": "cut" },
-		  "to": [
-		      {
-			  "key_code": "x",
-			  "modifiers": [ "left_command" ]
-		      }	    
-		  ],
-		  "conditions": [
-		      {
-			  "type": "frontmost_application_unless",
-			  "bundle_identifiers": ["^.*emacs.*$"]
-		      }
-		  ]		  		  
-	      }
-	  ]
-      },
-
-      
-      {
-	  "description": "Map Undo to Command-Z",
-	  "manipulators": [
-	      {
-		  "type": "basic",
-		  "from": { "key_code": "undo" },
-		  "to": [
-		      {
-			  "key_code": "z",
-			  "modifiers": [ "left_command" ]
-		      }	    
-		  ],
-		  "conditions": [
-		      {
-			  "type": "frontmost_application_unless",
-			  "bundle_identifiers": ["^.*emacs.*$"]
-		      }
-		  ]		  		  		  
-	      }
-	  ]
-      },
+	{
+	    "description": "Map Again to Tilde",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "again",
+			      "modifiers": {
+				  "optional": ["any"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "grave_accent_and_tilde"
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      
+		    ]		  
+		}
+	    ]
+	},
 
 
-      {
-	  "description": "Map Shift-Undo to Shift-Command-Z",
-	  "manipulators": [
-	      {
-		  "type": "basic",
-		  "from": { "key_code": "undo",
-			    "modifiers": {
-				"mandatory": [ "shift" ]
-			    }			    
-			  },
-		  "to": [
-		      {
-			  "key_code": "z",
-			  "modifiers": [ "left_command", "left_shift" ]
-		      }	    
-		  ],
-		  "conditions": [
-		      {
-			  "type": "frontmost_application_unless",
-			  "bundle_identifiers": ["^.*emacs.*$"]
-		      }
-		  ]		  		  		  
-	      }
-	  ]
-      },
-
-      
-      {
-	  "description": "Map Find to Command-F",
-	  "manipulators": [
-	      {
-		  "type": "basic",
-		  "from": { "key_code": "find" },
-		  "to": [
-		      {
-			  "key_code": "f",
-			  "modifiers": [ "left_command" ]
-		      }	    
-		  ],
-		  "conditions": [
-		      {
-			  "type": "frontmost_application_unless",
-			  "bundle_identifiers": ["^.*emacs.*$"]
-		      }
-		  ]		  		  
-	      }
-	  ]
-      },
+	{
+	    "description": "Map Tilde to Backspace",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "grave_accent_and_tilde",
+			      "modifiers": {
+				  "optional": ["any"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "delete_or_backspace"
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      
+		    ]		  
+		}
+	    ]
+	},
 
 
-      {
-	  "description": "Map Front to Command-Control-F",
-	  "manipulators": [
-	      {
-		  "type": "basic",
-		  "from": { "key_code": "select" },
-		  "to": [
-		      {
-			  "key_code": "f",
-			  "modifiers": [ "left_command", "left_control" ]
-		      }	    
-		  ],
-		  "conditions": [
-		      {
-			  "type": "frontmost_application_unless",
-			  "bundle_identifiers": ["^.*emacs.*$"]
-		      }
-		  ]		  		  
-	      }
-	  ]
-      },
+	{
+	    "description": "Map Compose to Right-Command",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "application",
+			      "modifiers": {
+				  "optional": ["any"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "right_command"
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      
+		    ]		  
+		}
+	    ]
+	},
 
 
-      {
-	  "description": "Map Help to Command-M",
-	  "manipulators": [
-	      {
-		  "type": "basic",
-		  "from": { "key_code": "help" },
-		  "to": [
-		      {
-			  "key_code": "m",
-			  "modifiers": [ "left_command" ]
-		      }	    
-		  ],
-		  "conditions": [
-		      {
-			  "type": "frontmost_application_unless",
-			  "bundle_identifiers": ["^.*emacs.*$"]
-		      }
-		  ]		  		  
-	      }
-	  ]
-      },
-      
+	{
+	    "description": "Map AltGraph to Right-Command",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "right_option",
+			      "modifiers": {
+				  "optional": ["any"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "right_command"
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      
+		    ]		  
+		}
+	    ]
+	},
 
-      {
-	  "description": "Map Power to Command-Ctrl-Q",
-	  "manipulators": [
-	      {
-		  "type": "basic",
-		  "from": { "key_code": "power" },
-		  "to": [
-		      {
-			  "key_code": "q",
-			  "modifiers": [ "left_command", "left_control" ]
-		      }	    
-		  ],
-		  "conditions": [
-		      {
-			  "type": "frontmost_application_unless",
-			  "bundle_identifiers": ["^.*emacs.*$"]
-		      }
-		  ]		  		  
-	      }
-	  ]
-      }
-      
-  ]
+
+	{
+	    "description": "Map Alt to Left-Command",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "left_option",
+			      "modifiers": {
+				  "optional": ["any"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "left_command"
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      
+		    ]		  
+		}
+	    ]
+	},
+	
+
+	{
+	    "description": "Map Right-Command to Right-Option",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "right_command",
+			      "modifiers": {
+				  "optional": ["any"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "right_option"
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      
+		    ]		  
+		}
+	    ]
+	},
+
+
+	{
+	    "description": "Map Left-Command to Left-Option",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "left_command",
+			      "modifiers": {
+				  "optional": ["any"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "left_option"
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      
+		    ]		  
+		}
+	    ]
+	},
+
+
+	{
+	    "description": "Map Caps-Lock to fn",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "caps_lock",
+			      "modifiers": {
+				  "optional": ["any"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "fn"
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      
+		    ]		  
+		}
+	    ]
+	},
+	
+	
+	{
+	    "description": "Map Copy to Command-C",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "copy" },
+		    "to": [
+			{
+			    "key_code": "c",
+			    "modifiers": [ "left_command" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      
+		    ]		  
+		}
+	    ]
+	},
+
+	
+	{
+	    "description": "Map Paste to Command-V",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "paste" },
+		    "to": [
+			{
+			    "key_code": "v",
+			    "modifiers": [ "left_command" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      		      
+		    ]		  		  
+		}
+	    ]
+	},
+	
+
+	{
+	    "description": "Map Cut to Command-X",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "cut" },
+		    "to": [
+			{
+			    "key_code": "x",
+			    "modifiers": [ "left_command" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      		      
+		    ]		  		  
+		}
+	    ]
+	},
+
+	
+	{
+	    "description": "Map Undo to Command-Z",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "undo",
+			      "modifiers": {
+				  "optional": ["shift"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "z",
+			    "modifiers": [ "left_command" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      		      
+		    ]		  		  		  
+		}
+	    ]
+	},
+
+	
+	{
+	    "description": "Map Find to Command-F",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "find" },
+		    "to": [
+			{
+			    "key_code": "f",
+			    "modifiers": [ "left_command" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      		      
+		    ]		  		  
+		}
+	    ]
+	},
+
+
+	{
+	    "description": "Map Front to Command-Control-F",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "select" },
+		    "to": [
+			{
+			    "key_code": "f",
+			    "modifiers": [ "left_command", "left_control" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      		      
+		    ]		  		  
+		}
+	    ]
+	},
+
+
+	{
+	    "description": "Map Help to Command-M",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "help" },
+		    "to": [
+			{
+			    "key_code": "m",
+			    "modifiers": [ "left_command" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      		      
+		    ]		  		  
+		}
+	    ]
+	},
+	
+
+	{
+	    "description": "Map Power to Command-Ctrl-Q",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "power" },
+		    "to": [
+			{
+			    "key_code": "q",
+			    "modifiers": [ "left_command", "left_control" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^.*emacs.*$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		  		      
+		    ]		  		  
+		}
+	    ]
+	}	
+    ]
 }
