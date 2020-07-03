@@ -1,0 +1,217 @@
+{
+  "title": "Personal dkamotsky Remapping for Sun Type-5",
+  "rules": [
+
+
+      {
+	  "description": "Map Copy to Command-C",
+	  "manipulators": [
+	      {
+		  "type": "basic",
+		  "from": { "key_code": "copy" },
+		  "to": [
+		      {
+			  "key_code": "c",
+			  "modifiers": [ "left_command" ]
+		      }	    
+		  ],
+		  "conditions": [
+		      {
+			  "type": "frontmost_application_unless",
+			  "bundle_identifiers": ["^.*emacs.*$"]
+		      }
+		  ]		  
+	      }
+	  ]
+      },
+
+      
+      {
+	  "description": "Map Paste to Command-V",
+	  "manipulators": [
+	      {
+		  "type": "basic",
+		  "from": { "key_code": "paste" },
+		  "to": [
+		      {
+			  "key_code": "v",
+			  "modifiers": [ "left_command" ]
+		      }	    
+		  ],
+		  "conditions": [
+		      {
+			  "type": "frontmost_application_unless",
+			  "bundle_identifiers": ["^.*emacs.*$"]
+		      }
+		  ]		  		  
+	      }
+	  ]
+      },
+      
+
+      {
+	  "description": "Map Cut to Command-X",
+	  "manipulators": [
+	      {
+		  "type": "basic",
+		  "from": { "key_code": "cut" },
+		  "to": [
+		      {
+			  "key_code": "x",
+			  "modifiers": [ "left_command" ]
+		      }	    
+		  ],
+		  "conditions": [
+		      {
+			  "type": "frontmost_application_unless",
+			  "bundle_identifiers": ["^.*emacs.*$"]
+		      }
+		  ]		  		  
+	      }
+	  ]
+      },
+
+      
+      {
+	  "description": "Map Undo to Command-Z",
+	  "manipulators": [
+	      {
+		  "type": "basic",
+		  "from": { "key_code": "undo" },
+		  "to": [
+		      {
+			  "key_code": "z",
+			  "modifiers": [ "left_command" ]
+		      }	    
+		  ],
+		  "conditions": [
+		      {
+			  "type": "frontmost_application_unless",
+			  "bundle_identifiers": ["^.*emacs.*$"]
+		      }
+		  ]		  		  		  
+	      }
+	  ]
+      },
+
+
+      {
+	  "description": "Map Shift-Undo to Shift-Command-Z",
+	  "manipulators": [
+	      {
+		  "type": "basic",
+		  "from": { "key_code": "undo",
+			    "modifiers": {
+				"mandatory": [ "shift" ]
+			    }			    
+			  },
+		  "to": [
+		      {
+			  "key_code": "z",
+			  "modifiers": [ "left_command", "left_shift" ]
+		      }	    
+		  ],
+		  "conditions": [
+		      {
+			  "type": "frontmost_application_unless",
+			  "bundle_identifiers": ["^.*emacs.*$"]
+		      }
+		  ]		  		  		  
+	      }
+	  ]
+      },
+
+      
+      {
+	  "description": "Map Find to Command-F",
+	  "manipulators": [
+	      {
+		  "type": "basic",
+		  "from": { "key_code": "find" },
+		  "to": [
+		      {
+			  "key_code": "f",
+			  "modifiers": [ "left_command" ]
+		      }	    
+		  ],
+		  "conditions": [
+		      {
+			  "type": "frontmost_application_unless",
+			  "bundle_identifiers": ["^.*emacs.*$"]
+		      }
+		  ]		  		  
+	      }
+	  ]
+      },
+
+
+      {
+	  "description": "Map Front to Command-Control-F",
+	  "manipulators": [
+	      {
+		  "type": "basic",
+		  "from": { "key_code": "select" },
+		  "to": [
+		      {
+			  "key_code": "f",
+			  "modifiers": [ "left_command", "left_control" ]
+		      }	    
+		  ],
+		  "conditions": [
+		      {
+			  "type": "frontmost_application_unless",
+			  "bundle_identifiers": ["^.*emacs.*$"]
+		      }
+		  ]		  		  
+	      }
+	  ]
+      },
+
+
+      {
+	  "description": "Map Help to Command-M",
+	  "manipulators": [
+	      {
+		  "type": "basic",
+		  "from": { "key_code": "help" },
+		  "to": [
+		      {
+			  "key_code": "m",
+			  "modifiers": [ "left_command" ]
+		      }	    
+		  ],
+		  "conditions": [
+		      {
+			  "type": "frontmost_application_unless",
+			  "bundle_identifiers": ["^.*emacs.*$"]
+		      }
+		  ]		  		  
+	      }
+	  ]
+      },
+      
+
+      {
+	  "description": "Map Power to Command-Ctrl-Q",
+	  "manipulators": [
+	      {
+		  "type": "basic",
+		  "from": { "key_code": "power" },
+		  "to": [
+		      {
+			  "key_code": "q",
+			  "modifiers": [ "left_command", "left_control" ]
+		      }	    
+		  ],
+		  "conditions": [
+		      {
+			  "type": "frontmost_application_unless",
+			  "bundle_identifiers": ["^.*emacs.*$"]
+		      }
+		  ]		  		  
+	      }
+	  ]
+      }
+      
+  ]
+}
