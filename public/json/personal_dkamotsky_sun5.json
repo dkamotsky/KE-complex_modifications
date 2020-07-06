@@ -4,7 +4,7 @@
 
 
 	{
-	    "description": "Map Again to Tilde",
+	    "description": "Sun Type-5 Map Again to Tilde",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -39,7 +39,7 @@
 
 
 	{
-	    "description": "Map Tilde to Backspace",
+	    "description": "Sun Type-5 Map Tilde to Backspace",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -74,7 +74,7 @@
 
 
 	{
-	    "description": "Map Compose to Right-Command",
+	    "description": "Sun Type-5 Map Compose to Right-Command",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -109,7 +109,7 @@
 
 
 	{
-	    "description": "Map AltGraph to Right-Command",
+	    "description": "Sun Type-5 Map AltGraph to Right-Command",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -144,7 +144,7 @@
 
 
 	{
-	    "description": "Map Alt to Left-Command",
+	    "description": "Sun Type-5 Map Alt to Left-Command",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -179,7 +179,7 @@
 	
 
 	{
-	    "description": "Map Right-Command to Right-Option",
+	    "description": "Sun Type-5 Map Right-Command to Right-Option",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -214,7 +214,7 @@
 
 
 	{
-	    "description": "Map Left-Command to Left-Option",
+	    "description": "Sun Type-5 Map Left-Command to Left-Option",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -249,7 +249,7 @@
 
 
 	{
-	    "description": "Map Caps-Lock to fn",
+	    "description": "Sun Type-5 Map Caps-Lock to fn",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -284,7 +284,7 @@
 	
 	
 	{
-	    "description": "Map Copy to Command-C",
+	    "description": "Sun Type-5 Map Copy to Command-C",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -316,7 +316,7 @@
 
 	
 	{
-	    "description": "Map Paste to Command-V",
+	    "description": "Sun Type-5 Map Paste to Command-V",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -348,7 +348,7 @@
 	
 
 	{
-	    "description": "Map Cut to Command-X",
+	    "description": "Sun Type-5 Map Cut to Command-X",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -380,7 +380,7 @@
 
 	
 	{
-	    "description": "Map Undo to Command-Z",
+	    "description": "Sun Type-5 Map Undo to Command-Z",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -416,7 +416,7 @@
 
 	
 	{
-	    "description": "Map Find to Command-F",
+	    "description": "Sun Type-5 Map Find to Command-F",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -448,7 +448,7 @@
 
 
 	{
-	    "description": "Map Front to Command-Control-F",
+	    "description": "Sun Type-5 Map Front to Command-Control-F",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -480,7 +480,7 @@
 
 
 	{
-	    "description": "Map Help to Command-M",
+	    "description": "Sun Type-5 Map Help to Command-M",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -512,7 +512,7 @@
 	
 
 	{
-	    "description": "Map Power to Command-Ctrl-Q",
+	    "description": "Sun Type-5 Map Power to Command-Ctrl-Q",
 	    "manipulators": [
 		{
 		    "type": "basic",

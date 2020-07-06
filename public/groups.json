@@ -752,7 +752,10 @@
           "path": "json/personal_thooams.json"
         },
         {
-          "path": "json/personal_dkamotsky.json"
+          "path": "json/personal_dkamotsky_capslock.json"
+        },
+        {
+          "path": "json/personal_dkamotsky_sun5.json"
         },	  
         {
           "path": "json/personal_jonlev1n.json"
