@@ -20,7 +20,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_unless",
@@ -55,7 +55,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_if",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_unless",
@@ -90,7 +90,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",

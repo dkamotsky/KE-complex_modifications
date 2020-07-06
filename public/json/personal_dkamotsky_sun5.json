@@ -1,7 +1,7 @@
 {
-    "title": "Personal dkamotsky Remapping for Sun Type-5",
+    "title": "Personal dkamotsky Remapping for Sun Type-5 NOT Emacs",
     "rules": [
-
+		
 
 	{
 	    "description": "Sun Type-5 Map Again to Tilde",
@@ -21,7 +21,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -56,7 +56,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -91,7 +91,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -109,7 +109,7 @@
 
 
 	{
-	    "description": "Sun Type-5 Map AltGraph to Right-Command",
+	    "description": "Sun Type-5 Map AltGraph to Right-Control",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -120,13 +120,13 @@
 			    },
 		    "to": [
 			{
-			    "key_code": "right_command"
+			    "key_code": "right_control"
 			}	    
 		    ],
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -144,7 +144,7 @@
 
 
 	{
-	    "description": "Sun Type-5 Map Alt to Left-Command",
+	    "description": "Sun Type-5 Map Alt to Left-Control",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -155,13 +155,13 @@
 			    },
 		    "to": [
 			{
-			    "key_code": "left_command"
+			    "key_code": "left_control"
 			}	    
 		    ],
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -196,7 +196,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -231,42 +231,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
-			},
-			{
-			    "type": "device_if",
-			    "identifiers": [
-				{
-				    "vendor_id": 2539,
-				    "product_id": 305
-				}
-			    ]
-			}		      
-		    ]		  
-		}
-	    ]
-	},
-
-
-	{
-	    "description": "Sun Type-5 Map Caps-Lock to fn",
-	    "manipulators": [
-		{
-		    "type": "basic",
-		    "from": { "key_code": "caps_lock",
-			      "modifiers": {
-				  "optional": ["any"]
-			      }			    
-			    },
-		    "to": [
-			{
-			    "key_code": "fn"
-			}	    
-		    ],
-		    "conditions": [
-			{
-			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -298,7 +263,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -330,7 +295,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -362,7 +327,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -398,7 +363,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -430,7 +395,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -462,7 +427,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -494,7 +459,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",
@@ -526,7 +491,7 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^.*emacs.*$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
 			},
 			{
 			    "type": "device_if",

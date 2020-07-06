@@ -756,7 +756,10 @@
         },
         {
           "path": "json/personal_dkamotsky_sun5.json"
-        },	  
+        },
+        {
+          "path": "json/personal_dkamotsky_pc_shortcuts.json"
+        },	  	  
         {
           "path": "json/personal_jonlev1n.json"
         },
