@@ -109,6 +109,42 @@
 
 
 	{
+	    "description": "Sun Type-5 Map Control to Right-Command",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "left_control",
+			      "modifiers": {
+				  "optional": ["any"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "right_command"
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      
+		    ]		  
+		}
+	    ]
+	},
+
+	
+
+	{
 	    "description": "Sun Type-5 Map AltGraph to Right-Control",
 	    "manipulators": [
 		{
