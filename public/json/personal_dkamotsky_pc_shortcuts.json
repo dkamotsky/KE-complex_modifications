@@ -42,6 +42,49 @@
 	    ]
 	},
 
+
+	{
+	    "description": "Map Command-Insert to Command-C",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "insert",
+			      "modifiers": {
+				  "mandatory": [ "command" ]
+			      }
+			    },
+		    "to": [
+			{
+			    "key_code": "c",
+			    "modifiers": [ "left_command" ]
+			}	    
+		    ]
+		}
+	    ]
+	},
+
+
+	{
+	    "description": "Map Shift-Insert to Command-V",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "insert",
+			      "modifiers": {
+				  "mandatory": [ "shift" ]
+			      }
+			    },
+		    "to": [
+			{
+			    "key_code": "v",
+			    "modifiers": [ "left_command" ]
+			}	    
+		    ]
+		}
+	    ]
+	},
+	
+	
 	{
 	    "description": "Map Home to Command-Left NOT Emacs",
 	    "manipulators": [
