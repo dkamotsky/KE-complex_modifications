@@ -47,11 +47,7 @@
 	    "manipulators": [
 		{
 		    "type": "basic",
-		    "from": { "key_code": "home",
-			      "modifiers": {
-				  "optional": ["any"]
-			      }			    
-			    },
+		    "from": { "key_code": "home" },
 		    "to": [
 			{
 			    "key_code": "left_arrow",
@@ -74,11 +70,7 @@
 	    "manipulators": [
 		{
 		    "type": "basic",
-		    "from": { "key_code": "end",
-			      "modifiers": {
-				  "optional": ["any"]
-			      }			    
-			    },
+		    "from": { "key_code": "end" },
 		    "to": [
 			{
 			    "key_code": "right_arrow",
@@ -94,6 +86,60 @@
 		}
 	    ]
 	},
+
+	{
+	    "description": "Map Command-Home to fn-Left NOT Emacs",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "home",
+			      "modifiers": {
+				  "mandatory": ["command"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "left_arrow",
+			    "modifiers": [ "fn" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			}			
+		    ]		  
+		}
+	    ]
+	},
+
+
+	{
+	    "description": "Map Command-End to fn-Right NOT Emacs",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "end",
+			      "modifiers": {
+				  "mandatory": ["command"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "right_arrow",
+			    "modifiers": [ "fn" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			}
+		    ]		  
+		}
+	    ]
+	},
+
 	
 	{
 	    "description": "Map PrintScreen to Ctrl+Shift+Command+3 (whole screen to clipboard)",
