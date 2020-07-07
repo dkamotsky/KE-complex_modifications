@@ -4,6 +4,78 @@
 		
 
 	{
+	    "description": "Sun Type-5 Map Home to Command-Left",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "home",
+			      "modifiers": {
+				  "optional": ["any"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "left_arrow",
+			    "modifiers": [ "left_command" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			},			
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      
+		    ]		  
+		}
+	    ]
+	},
+
+
+	{
+	    "description": "Sun Type-5 Map End to Command-Right",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "end",
+			      "modifiers": {
+				  "optional": ["any"]
+			      }			    
+			    },
+		    "to": [
+			{
+			    "key_code": "right_arrow",
+			    "modifiers": [ "left_command" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			},			
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      
+		    ]		  
+		}
+	    ]
+	},
+	
+	
+	{
 	    "description": "Sun Type-5 Map Again to Tilde",
 	    "manipulators": [
 		{
@@ -19,10 +91,6 @@
 			}	    
 		    ],
 		    "conditions": [
-			{
-			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
-			},
 			{
 			    "type": "device_if",
 			    "identifiers": [
@@ -55,10 +123,6 @@
 		    ],
 		    "conditions": [
 			{
-			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
-			},
-			{
 			    "type": "device_if",
 			    "identifiers": [
 				{
@@ -89,10 +153,6 @@
 			}	    
 		    ],
 		    "conditions": [
-			{
-			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
-			},
 			{
 			    "type": "device_if",
 			    "identifiers": [
@@ -161,10 +221,6 @@
 		    ],
 		    "conditions": [
 			{
-			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
-			},
-			{
 			    "type": "device_if",
 			    "identifiers": [
 				{
@@ -195,10 +251,6 @@
 			}	    
 		    ],
 		    "conditions": [
-			{
-			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
-			},
 			{
 			    "type": "device_if",
 			    "identifiers": [
@@ -231,10 +283,6 @@
 		    ],
 		    "conditions": [
 			{
-			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
-			},
-			{
 			    "type": "device_if",
 			    "identifiers": [
 				{
@@ -265,10 +313,6 @@
 			}	    
 		    ],
 		    "conditions": [
-			{
-			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
-			},
 			{
 			    "type": "device_if",
 			    "identifiers": [
@@ -415,9 +459,37 @@
 	    ]
 	},
 
+
+	{
+	    "description": "Sun Type-5 Map Props to Command-,",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "menu" },
+		    "to": [
+			{
+			    "key_code": "comma",
+			    "modifiers": [ "left_command" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      		      
+		    ]		  		  		  
+		}
+	    ]
+	},
+	
 	
 	{
-	    "description": "Sun Type-5 Map Find to Command-F",
+	    "description": "Sun Type-5 Map Find to Command-F NOT Emacs",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -449,7 +521,39 @@
 
 
 	{
-	    "description": "Sun Type-5 Map Front to Command-Control-F",
+	    "description": "Sun Type-5 Map Find to Control-S WHEN Emacs",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "find" },
+		    "to": [
+			{
+			    "key_code": "s",
+			    "modifiers": [ "left_control" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_if",
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      		      
+		    ]		  		  
+		}
+	    ]
+	},
+	
+
+	{
+	    "description": "Sun Type-5 Map Front to Command-Control-F NOT Emacs",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -480,6 +584,66 @@
 	},
 
 
+	{
+	    "description": "Sun Type-5 Map Front to Opt-F10 WHEN Emacs",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "select" },
+		    "to": [
+			{
+			    "key_code": "f10",
+			    "modifiers": [ "left_option" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_if",
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			},
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      		      
+		    ]		  		  
+		}
+	    ]
+	},
+
+
+	{
+	    "description": "Sun Type-5 Map Stop to Command-Q",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "stop" },
+		    "to": [
+			{
+			    "key_code": "q",
+			    "modifiers": [ "left_command" ]
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		      		      
+		    ]		  		  
+		}
+	    ]
+	},
+
+	
 	{
 	    "description": "Sun Type-5 Map Help to Command-M",
 	    "manipulators": [
@@ -526,10 +690,6 @@
 		    ],
 		    "conditions": [
 			{
-			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
-			},
-			{
 			    "type": "device_if",
 			    "identifiers": [
 				{
@@ -541,6 +701,191 @@
 		    ]		  		  
 		}
 	    ]
-	}	
+	},
+
+	{
+	    "description": "Sun Type-5 Map PrintScreen to Ctrl+Shift+Command+3 (whole screen to clipboard)",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": {
+			"key_code": "print_screen"
+		    },
+		    "to": [
+			{
+			    "key_code": "3",
+			    "modifiers": [
+				"left_command",
+				"left_shift",
+				"left_control"
+			    ]
+			}
+		    ],
+		    "conditions": [
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		  		      
+		    ]		    
+		}
+	    ]
+	},
+
+	
+	{
+	    "description": "Sun Type-5 Map Opt-PrintScreen to Ctrl+Shift+Command+4+Space (current window to clipboard)",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": {
+			"key_code": "print_screen",
+			"modifiers": {
+			    "mandatory": ["option"]
+			}			
+		    },
+		    "to": [
+			{
+			    "key_code": "4",
+			    "modifiers": [
+				"left_command",
+				"left_shift",
+				"left_control"
+			    ]
+			},
+			{
+			    "key_code": "spacebar"
+			}			
+		    ],
+		    "conditions": [
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		  		      
+		    ]		    
+		}
+	    ]
+	},
+
+	
+	{
+	    "description": "Sun Type-5 Map Command-PrintScreen to Ctrl+Shift+Command+4 (selection to clipboard)",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": {
+			"key_code": "print_screen",
+			"modifiers": {
+			    "mandatory": ["command"]
+			}			
+		    },
+		    "to": [
+			{
+			    "key_code": "4",
+			    "modifiers": [
+				"left_command",
+				"left_shift",
+				"left_control"
+			    ]
+			}
+		    ],
+		    "conditions": [
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		  		      
+		    ]		    
+		}
+	    ]
+	},
+
+	{
+	    "description": "Sun Type-5 Open opens Emacs NOT Emacs",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": {
+			"key_code": "execute"
+		    },
+		    "to": [
+			{
+			    "shell_command": "open -a 'emacs'"
+			}
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_unless",
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			},			
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		  		      
+		    ]
+		}
+	    ]
+	},
+
+	
+	{
+	    "description": "Sun Type-5 Map Open to ^X^F WHEN Emacs",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": {
+			"key_code": "execute"
+		    },
+		    "to": [
+			{
+			    "key_code": "x",
+			    "modifiers": [
+				"left_control"
+			    ]
+			},
+			{
+			    "key_code": "f",
+			    "modifiers": [
+				"left_control"
+			    ]
+			}
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_if",
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			},			
+			{
+			    "type": "device_if",
+			    "identifiers": [
+				{
+				    "vendor_id": 2539,
+				    "product_id": 305
+				}
+			    ]
+			}		  		      
+		    ]
+		}
+	    ]
+	}		
+	
     ]
 }
