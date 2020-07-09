@@ -100,7 +100,8 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$",
+                                                   "^com.googlecode.iterm2$"]
 			}			
 		    ]		  
 		}
@@ -120,10 +121,11 @@
 			    "modifiers": [ "left_command" ]
 			}	    
 		    ],
-		    "conditions": [
+		    "conditions": [                        
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$",
+                                                   "^com.googlecode.iterm2$"]
 			}
 		    ]		  
 		}
@@ -149,7 +151,8 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$",
+                                                   "^com.googlecode.iterm2$"]
 			}			
 		    ]		  
 		}
@@ -176,7 +179,8 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$",
+                                                   "^com.googlecode.iterm2$"]
 			}
 		    ]		  
 		}
@@ -259,7 +263,7 @@
 		    ]
 		}
 	    ]
-	}	
-	
+	}
+
     ]
 }
