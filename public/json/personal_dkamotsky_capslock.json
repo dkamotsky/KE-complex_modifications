@@ -20,7 +20,8 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$",
+                                                   "^org.eclipse.*$"]
 			},
 			{
 			    "type": "device_unless",
@@ -55,7 +56,8 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_if",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$",
+                                                   "^org.eclipse.*$"]
 			},
 			{
 			    "type": "device_unless",
@@ -88,10 +90,6 @@
 			}	    
 		    ],
 		    "conditions": [
-			{
-			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
-			},
 			{
 			    "type": "device_if",
 			    "identifiers": [

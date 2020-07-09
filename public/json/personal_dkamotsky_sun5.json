@@ -1,5 +1,5 @@
 {
-    "title": "Personal dkamotsky Remapping for Sun Type-5 NOT Emacs",
+    "title": "Personal dkamotsky Remapping for Sun Type-5",
     "rules": [
 		
 	{
@@ -96,7 +96,7 @@
 
 
 	{
-	    "description": "Sun Type-5 Map Control to Right-Command",
+	    "description": "Sun Type-5 Map Control to Right-Command NOT Emacs",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -113,7 +113,8 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$",
+                                                   "^org.eclipse.*$"]
 			},
 			{
 			    "type": "device_if",
@@ -430,7 +431,8 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_unless",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$",
+                                                   "^org.eclipse.*$"]
 			},
 			{
 			    "type": "device_if",
@@ -462,7 +464,8 @@
 		    "conditions": [
 			{
 			    "type": "frontmost_application_if",
-			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			    "bundle_identifiers": ["^org.gnu.Emacs$",
+                                                   "^org.eclipse.*$"]
 			},
 			{
 			    "type": "device_if",
