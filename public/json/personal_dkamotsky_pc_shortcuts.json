@@ -101,7 +101,8 @@
 			{
 			    "type": "frontmost_application_unless",
 			    "bundle_identifiers": ["^org.gnu.Emacs$",
-                                                   "^com.googlecode.iterm2$"]
+                                                   "^com.googlecode.iterm2$",
+                                                   "^org.mozilla.firefox$"]
 			}			
 		    ]		  
 		}
@@ -125,7 +126,8 @@
 			{
 			    "type": "frontmost_application_unless",
 			    "bundle_identifiers": ["^org.gnu.Emacs$",
-                                                   "^com.googlecode.iterm2$"]
+                                                   "^com.googlecode.iterm2$",
+                                                   "^org.mozilla.firefox$"]
 			}
 		    ]		  
 		}
@@ -152,7 +154,8 @@
 			{
 			    "type": "frontmost_application_unless",
 			    "bundle_identifiers": ["^org.gnu.Emacs$",
-                                                   "^com.googlecode.iterm2$"]
+                                                   "^com.googlecode.iterm2$",
+                                                   "^org.mozilla.firefox$"]
 			}			
 		    ]		  
 		}
@@ -180,7 +183,8 @@
 			{
 			    "type": "frontmost_application_unless",
 			    "bundle_identifiers": ["^org.gnu.Emacs$",
-                                                   "^com.googlecode.iterm2$"]
+                                                   "^com.googlecode.iterm2$",
+                                                   "^org.mozilla.firefox$"]
 			}
 		    ]		  
 		}
