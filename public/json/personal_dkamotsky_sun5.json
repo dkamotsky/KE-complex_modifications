@@ -18,6 +18,14 @@
 			}	    
 		    ],
 		    "conditions": [
+                        {
+                            "type": "input_source_if",
+                            "input_sources": [
+                                {
+                                    "language": "^en.*$"
+                                }
+                            ]
+                        },                        
 			{
 			    "type": "device_if",
 			    "identifiers": [
@@ -49,6 +57,14 @@
 			}	    
 		    ],
 		    "conditions": [
+                        {
+                            "type": "input_source_if",
+                            "input_sources": [
+                                {
+                                    "language": "^en.*$"
+                                }
+                            ]
+                        },                        
 			{
 			    "type": "device_if",
 			    "identifiers": [
