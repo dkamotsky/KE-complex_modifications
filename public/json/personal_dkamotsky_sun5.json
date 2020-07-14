@@ -1,9 +1,9 @@
 {
-    "title": "Personal dkamotsky Remapping for Sun Type-5",
+    "title": "Personal dkamotsky Remapping for Sun Type-5|7",
     "rules": [
 		
 	{
-	    "description": "Sun Type-5 Map Again to Tilde",
+	    "description": "Sun Type-5|7 Map Again to Tilde",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -42,7 +42,7 @@
 
 
 	{
-	    "description": "Sun Type-5 Map Tilde to Backspace",
+	    "description": "Sun Type-5|7 Map Tilde to Backspace",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -71,7 +71,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      
 		    ]		  
@@ -81,7 +85,7 @@
 
 
 	{
-	    "description": "Sun Type-5 Map Compose to Right-Command",
+	    "description": "Sun Type-5|7 Map Compose to Right-Command",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -102,7 +106,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      
 		    ]		  
@@ -112,7 +120,7 @@
 
 
 	{
-	    "description": "Sun Type-5 Map Control to Right-Command NOT Emacs",
+	    "description": "Sun Type-5|7 Map Control to Right-Command NOT Emacs",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -130,7 +138,8 @@
 			{
 			    "type": "frontmost_application_unless",
 			    "bundle_identifiers": ["^org.gnu.Emacs$",
-                                                   "^org.eclipse.*$"]
+                                                   "^org.eclipse.*$",
+                                                   "^com.jetbrains.*$"]
 			},
 			{
 			    "type": "device_if",
@@ -138,7 +147,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      
 		    ]		  
@@ -149,7 +162,7 @@
 	
 
 	{
-	    "description": "Sun Type-5 Map AltGraph to Right-Control",
+	    "description": "Sun Type-5|7 Map AltGraph to Right-Control",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -170,7 +183,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      
 		    ]		  
@@ -180,7 +197,7 @@
 
 
 	{
-	    "description": "Sun Type-5 Map Alt to Left-Control",
+	    "description": "Sun Type-5|7 Map Alt to Left-Control",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -201,7 +218,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      
 		    ]		  
@@ -211,7 +232,7 @@
 	
 
 	{
-	    "description": "Sun Type-5 Map Right-Command to Right-Option",
+	    "description": "Sun Type-5|7 Map Right-Command to Right-Option",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -232,7 +253,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      
 		    ]		  
@@ -242,7 +267,7 @@
 
 
 	{
-	    "description": "Sun Type-5 Map Left-Command to Left-Option",
+	    "description": "Sun Type-5|7 Map Left-Command to Left-Option",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -263,7 +288,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      
 		    ]		  
@@ -273,7 +302,7 @@
 	
 	
 	{
-	    "description": "Sun Type-5 Map Copy to Command-C",
+	    "description": "Sun Type-5|7 Map Copy to Command-C",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -295,7 +324,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      
 		    ]		  
@@ -305,7 +338,7 @@
 
 	
 	{
-	    "description": "Sun Type-5 Map Paste to Command-V",
+	    "description": "Sun Type-5|7 Map Paste to Command-V",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -327,7 +360,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      		      
 		    ]		  		  
@@ -337,7 +374,7 @@
 	
 
 	{
-	    "description": "Sun Type-5 Map Cut to Command-X",
+	    "description": "Sun Type-5|7 Map Cut to Command-X",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -359,7 +396,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      		      
 		    ]		  		  
@@ -369,7 +410,7 @@
 
 	
 	{
-	    "description": "Sun Type-5 Map Undo to Command-Z",
+	    "description": "Sun Type-5|7 Map Undo to Command-Z",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -395,7 +436,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      		      
 		    ]		  		  		  
@@ -405,7 +450,7 @@
 
 
 	{
-	    "description": "Sun Type-5 Map Props to Command-,",
+	    "description": "Sun Type-5|7 Map Props to Command-,",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -423,7 +468,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      		      
 		    ]		  		  		  
@@ -433,7 +482,7 @@
 	
 	
 	{
-	    "description": "Sun Type-5 Map Find to Command-F NOT Emacs",
+	    "description": "Sun Type-5|7 Map Find to Command-F NOT Emacs",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -448,7 +497,8 @@
 			{
 			    "type": "frontmost_application_unless",
 			    "bundle_identifiers": ["^org.gnu.Emacs$",
-                                                   "^org.eclipse.*$"]
+                                                   "^org.eclipse.*$",
+                                                   "^com.jetbrains.*$"]
 			},
 			{
 			    "type": "device_if",
@@ -456,7 +506,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      		      
 		    ]		  		  
@@ -466,7 +520,7 @@
 
 
 	{
-	    "description": "Sun Type-5 Map Find to Control-S WHEN Emacs",
+	    "description": "Sun Type-5|7 Map Find to Control-S WHEN Emacs",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -481,7 +535,8 @@
 			{
 			    "type": "frontmost_application_if",
 			    "bundle_identifiers": ["^org.gnu.Emacs$",
-                                                   "^org.eclipse.*$"]
+                                                   "^org.eclipse.*$",
+                                                   "^com.jetbrains.*$"]
 			},
 			{
 			    "type": "device_if",
@@ -489,7 +544,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      		      
 		    ]		  		  
@@ -499,7 +558,7 @@
 	
 
 	{
-	    "description": "Sun Type-5 Map Front to Command-Control-F NOT Emacs",
+	    "description": "Sun Type-5|7 Map Front to Command-Control-F NOT Emacs",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -521,7 +580,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      		      
 		    ]		  		  
@@ -531,7 +594,7 @@
 
 
 	{
-	    "description": "Sun Type-5 Map Front to Opt-F10 WHEN Emacs",
+	    "description": "Sun Type-5|7 Map Front to Opt-F10 WHEN Emacs",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -553,7 +616,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      		      
 		    ]		  		  
@@ -563,7 +630,7 @@
 
 
 	{
-	    "description": "Sun Type-5 Map Stop to Command-Q",
+	    "description": "Sun Type-5|7 Map Stop to Command-Q",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -581,7 +648,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      		      
 		    ]		  		  
@@ -591,7 +662,7 @@
 
 	
 	{
-	    "description": "Sun Type-5 Map Help to Command-M",
+	    "description": "Sun Type-5|7 Map Help to Command-M",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -613,7 +684,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      		      
 		    ]		  		  
@@ -623,7 +698,7 @@
 	
 
 	{
-	    "description": "Sun Type-5 Map Power to Command-Ctrl-Q",
+	    "description": "Sun Type-5|7 Map Power to Command-Ctrl-Q",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -641,7 +716,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		  		      
 		    ]		  		  
@@ -650,7 +729,7 @@
 	},
 
 	{
-	    "description": "Sun Type-5 Open opens Emacs NOT Emacs",
+	    "description": "Sun Type-5|7 Open opens Emacs NOT Emacs",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -673,7 +752,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		  		      
 		    ]
@@ -683,7 +766,7 @@
 
 	
 	{
-	    "description": "Sun Type-5 Map Open to ^X^F WHEN Emacs",
+	    "description": "Sun Type-5|7 Map Open to ^X^F WHEN Emacs",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -715,7 +798,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		  		      
 		    ]

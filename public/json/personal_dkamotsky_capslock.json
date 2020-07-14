@@ -21,7 +21,8 @@
 			{
 			    "type": "frontmost_application_unless",
 			    "bundle_identifiers": ["^org.gnu.Emacs$",
-                                                   "^org.eclipse.*$"]
+                                                   "^org.eclipse.*$",
+                                                   "^com.jetbrains.*$"]
 			},
 			{
 			    "type": "device_unless",
@@ -29,7 +30,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                                                
 			    ]
 			}			
 		    ]		  
@@ -57,7 +62,8 @@
 			{
 			    "type": "frontmost_application_if",
 			    "bundle_identifiers": ["^org.gnu.Emacs$",
-                                                   "^org.eclipse.*$"]
+                                                   "^org.eclipse.*$",
+                                                   "^com.jetbrains.*$"]
 			},
 			{
 			    "type": "device_unless",
@@ -65,7 +71,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                                                
 			    ]
 			}						
 		    ]		  
@@ -75,7 +85,7 @@
 
 	
 	{
-	    "description": "Map Caps-Lock to fn WHEN Sun Type-5",
+	    "description": "Map Caps-Lock to fn WHEN Sun Type-5|7",
 	    "manipulators": [
 		{
 		    "type": "basic",
@@ -96,7 +106,11 @@
 				{
 				    "vendor_id": 2539,
 				    "product_id": 305
-				}
+				},
+				{
+				    "vendor_id": 1072,
+				    "product_id": 162
+				}                                
 			    ]
 			}		      
 		    ]		  
