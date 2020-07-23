@@ -83,18 +83,47 @@
 		}
 	    ]
 	},
-	
+
+	{
+	    "description": "Map Home to ^A WHEN Emacs",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "home",
+                              "modifiers": {
+				  "optional": [ "shift" ]
+			      }                              
+                            },
+		    "to": [
+			{
+			    "key_code": "a",
+			    "modifiers": [ "left_control" ]                            
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_if",
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			}			
+		    ]		  
+		}
+	    ]
+	},	
 	
 	{
 	    "description": "Map Home to Command-Left NOT Emacs",
 	    "manipulators": [
 		{
 		    "type": "basic",
-		    "from": { "key_code": "home" },
+		    "from": { "key_code": "home",
+                              "modifiers": {
+				  "optional": [ "shift" ]
+			      }                              
+                            },
 		    "to": [
 			{
 			    "key_code": "left_arrow",
-			    "modifiers": [ "left_command" ]
+			    "modifiers": [ "left_command" ]                            
 			}	    
 		    ],
 		    "conditions": [
@@ -109,13 +138,42 @@
 	    ]
 	},
 
+	{
+	    "description": "Map End to ^E WHEN Emacs",
+	    "manipulators": [
+		{
+		    "type": "basic",
+		    "from": { "key_code": "end",
+                              "modifiers": {
+				  "optional": [ "shift" ]
+			      }                              
+                            },
+		    "to": [
+			{
+			    "key_code": "e",
+			    "modifiers": [ "left_control" ]                            
+			}	    
+		    ],
+		    "conditions": [
+			{
+			    "type": "frontmost_application_if",
+			    "bundle_identifiers": ["^org.gnu.Emacs$"]
+			}			
+		    ]		  
+		}
+	    ]
+	},        
 
 	{
 	    "description": "Map End to Command-Right NOT Emacs",
 	    "manipulators": [
 		{
 		    "type": "basic",
-		    "from": { "key_code": "end" },
+		    "from": { "key_code": "end",
+                              "modifiers": {
+				  "optional": [ "shift" ]
+			      }                              
+                            },
 		    "to": [
 			{
 			    "key_code": "right_arrow",
@@ -141,7 +199,8 @@
 		    "type": "basic",
 		    "from": { "key_code": "home",
 			      "modifiers": {
-				  "mandatory": ["command"]
+				  "mandatory": ["command"],
+                                  "optional": ["shift"]
 			      }			    
 			    },
 		    "to": [
@@ -170,7 +229,8 @@
 		    "type": "basic",
 		    "from": { "key_code": "end",
 			      "modifiers": {
-				  "mandatory": ["command"]
+				  "mandatory": ["command"],
+                                  "optional": ["shift"]                                  
 			      }			    
 			    },
 		    "to": [
